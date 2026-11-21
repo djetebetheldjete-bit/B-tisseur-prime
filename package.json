@@ -1,0 +1,9 @@
+{
+  "name": "batisseur-archives",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bâtisseur Archives — archive des projets pour le formateur (liens + ZIP de la version finale). Aucune dépendance.",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "test": "node test/test.js" },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,17 @@
+# Configuration de déploiement pour Render (https://render.com)
+services:
+  - type: web
+    name: batisseur-archives
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: ADMIN_EMAIL
+        sync: false        # ton e-mail de formateur
+      - key: ADMIN_PASSWORD
+        sync: false        # un mot de passe long, connu de toi seul
+      - key: SUPABASE_URL
+        sync: false        # https://djjtqjsfsqwatujwnuel.supabase.co
+      - key: SUPABASE_KEY
+        sync: false        # clé "service_role" (secrète) du projet Bâtisseur
